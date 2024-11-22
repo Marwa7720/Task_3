@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task 3</title>
+    <style>
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            text-align: center;
+        }
+        td {
+            border: 1px solid #000;
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+    <!-- الجزء الأول: الجدول -->
+    <h2>Task 3 Table</h2>
+    <table>
+        <tr>
+            <td>
+                <p>This is paragraph one.</p>
+                <p>This is paragraph two.</p>
+            </td>
+            <td>
+                <iframe src="https://en.wikipedia.org" width="300" height="150" style="border: none;"></iframe>
+            </td>
+            <td>
+             
+    <video width="300" height="150" controls autoplay >
+        <source src="اعمل نفسك ميت.mp4 " type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
+  
+</td>
+            </td>
+        </tr>
+        <tr>
+            <td colspan="3">
+                <audio controls autoplay>
+                    <source src="عيد السؤال تاني.mp3" type="audio/mpeg">
+                    Your browser does not support the audio element.
+                </audio>
+            </td>
+        </tr>
+    </table>
+
+    <hr>
+
+    <!-- الجزء الثاني: صفحة التسجيل -->
+    <h2>Registration Form</h2>
+ <form
+ action="thankyou.html" method="post">
+        <label for="firstName">First Name:</label>
+        <input type="text" id="firstName" name="firstName" placeholder="enter the first name"><br><br>
+        
+        <label for="lastName">Last Name:</label>
+        <input type="text" id="lastName" name="lastName" placeholder="enter the last name"><br><br>
+        
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" placeholder="enter the password"><br><br>
+        
+        <label for="confirmPassword">Repeat Password:</label>
+        <input type="password" id="confirmPassword" name="confirmPassword" placeholder="enter the repeat password"><br><br>
+        
+        <label for="userPicture">User Picture:</label>
+        <input type="file" id="userPicture" name="userPicture" accept="image/*" required><br><br>
+        
+        <label>Gender:</label>
+        <fieldset>
+            <input type="radio" id="male" name="gender" value="male" required>
+            <label for="male">Male</label>
+            <input type="radio" id="female" name="gender" value="female" required>
+            <label for="female">Female</label>
+        </fieldset><br>
+        
+        <label for="faculty">Faculty:</label>
+        <select id="faculty" name="faculty" required>
+            <option value="engineering">Engineering</option>
+            <option value="medicine">Medicine</option>
+            <option value="commerce">commerce</option>
+            <option value="computers and information">computers and information</option>
+
+        </select><br><br>
+        
+        <label>Interests:</label>
+        <fieldset>
+            <input type="checkbox" id="programming" name="interests" value="Programming">
+            <label for="programming">Programming</label>
+            <input type="checkbox" id="reading" name="interests" value="Reading">
+            <label for="reading">Reading</label>
+            <input type="checkbox" id="swimming" name="interests" value="Swimming">
+            <label for="swimming">Swimming</label>
+        </fieldset><br>
+        
+        <label for="about">About You:</label><br>
+        <textarea id="about" name="about" rows="4" required></textarea><br><br>
+        
+        <button type="submit">Submit</button>
+        <button type="reset">Reset</button>
+        
+    </form>
+
+   
+</form>
+</body>
+</html>
